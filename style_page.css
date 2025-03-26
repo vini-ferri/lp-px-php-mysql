@@ -1,0 +1,374 @@
+:root {
+    --color1: #3D85C5;
+    --color2: #2B5F8C;
+    --color3: #224A6D;
+    --color4: #1A3853;
+    --color5: #FF7E2E;
+    --color6: #F3931B;
+    --color7: #F5F5F5;
+    --color8: #080808;
+    --color9: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--color9);
+    background-color: #18162c;
+}
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: var(--color5);
+    color: #fff;
+    padding: 10px 35px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: var(--color6);
+}
+
+.button {
+    font-weight: bold;
+    color: var(--color9);
+    background-color: var(--color5);
+    color: var(--color9);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 45px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    background: url("img/background.jpg") no-repeat fixed;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.title_head_section {
+    margin-bottom: 40px;
+}
+
+.title_head {
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.subtitle_head {
+    font-size: 20px;
+}
+
+.container_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: url("img/background.jpg") no-repeat fixed;
+}
+
+.column {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+    max-width: 50%;
+}
+
+.column.logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 50%;
+}
+
+.partner_companies {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #041931;
+}
+
+.company_list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    background-image: 
+        linear-gradient(to left, #041931, rgba(0, 0, 0, 0) 60%), 
+        linear-gradient(to right, #041931, rgba(0, 0, 0, 0) 60%),
+        url("img/PX_White.png");    
+        background-repeat: repeat-x;      
+    background-size: contain;
+    margin-bottom: 40px;
+}
+
+.input_info_text {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 45px;
+}
+
+.title_partner_companies {
+    padding: 28px;
+    font-size: 20px;
+    font-weight: 500; 
+}
+
+.company_list img {
+    width: 150px;
+}
+
+.form_section {
+    background: linear-gradient(180deg, #1A3853 0%, #15293B 100%);
+    padding: 60px !important;
+
+}
+
+.title_form_section {
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.subtitle_form_section {
+    font-size: 20px;
+
+
+}
+
+fieldset {
+    border: solid 0px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;
+    padding: 40px;
+}
+.client_form {
+    background-color: #091B2D;
+    box-shadow: 0 0 27.4px -1px rgba(255, 255, 255, 0.11);
+    border: solid 0px;
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.label_input {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: var(--color5);
+}
+
+.input_line {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.input_user {
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px solid;
+    background-color: #003250;
+    font-size: 14px;
+    width: 100%;
+    color: #fff;
+}
+
+.input_user::placeholder {
+    color: #6F8BA4;
+}
+
+.input_user, select#position {
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px solid;
+    background-color: #003250;
+    font-size: 14px;
+    width: 100%;
+    color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+select#position {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16' fill='%23ffffff'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+    padding-right: 60px;
+}
+
+.input_user::placeholder {
+    color: #6F8BA4;
+}
+
+select#position option {
+    background-color: #003250;
+    color: #6F8BA4;
+}
+
+.about-company {
+    padding: 40px;
+    display: flex;
+}
+
+.column.text_info_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company_text_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.dynamic-text {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.dynamic_text_subtitle {
+    font-size: 20px;
+}
+
+.footer_section {
+    display: flex;
+    background-color: var(--color3);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 45px;
+}
+
+.footer-right-section {
+    display: flex;
+}
+
+
+@media (max-width: 768px) {
+    /* REMOVENDO BACKGROUND NO MOBILE */
+    .container_head {
+        background: none !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* FAZENDO OS ELEMENTOS FICAREM UM ABAIXO DO OUTRO */
+    .column {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .column.logo {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* AJUSTANDO FORMULÁRIO */
+    .form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .input_info_text {
+        max-width: 100%;
+        margin-right: 0;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .input_line {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    /* AJUSTANDO LISTA DE PARCEIROS */
+    .company_list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company_list img {
+        max-width: 100px;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    /* SOBRE A EMPRESA E FOOTER */
+    .about-company, .footer_section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    .dynamic-text {
+        font-size: 24px;
+    }
+
+    .company_list img {
+        max-width: 80px;
+    }
+}
+

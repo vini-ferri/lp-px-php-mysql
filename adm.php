@@ -46,6 +46,7 @@ if (!isset($_SESSION['logged_in'])) {
 
 $result = mysqli_query($connection, "SELECT * FROM leads");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,14 +66,14 @@ $result = mysqli_query($connection, "SELECT * FROM leads");
     <h2>Registration List</h2>
     <table>
         <tr>
-            <th>Name</th>
+            <th>Nome</th>
             <th>Email</th>
-            <th>Phone</th>
-            <th>Company</th>
-            <th>Position</th>
-            <th>Truck Quantity</th>
-            <th>State</th>
-            <th>City</th>
+            <th>Telefone</th>
+            <th>Empresa</th>
+            <th>Cargo</th>
+            <th>Quantidade de Caminhões</th>
+            <th>Estado</th>
+            <th>Cidade</th>
         </tr>
         <?php while ($row = mysqli_fetch_assoc($result)) { ?>
         <tr>
